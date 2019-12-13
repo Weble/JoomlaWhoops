@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+    <name>PLG_WHOOPS</name>
+    <author>Weble</author>
+    <creationDate>November 2019</creationDate>
+    <copyright>Copyright (C) 2019 - Weble Srl</copyright>
+    <license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>daniele@weble.it</authorEmail>
+    <authorUrl>www.weble.it</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_WHOOPS_XML_DESCRIPTION</description>
+
+    <!--  Files -->
+    <files>
+        <filename plugin="whoops">whoops.php</filename>
+        <filename plugin="whoops">index.html</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_whoops.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_whoops.sys.ini</language>
+    </languages>
+
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="enable_with_jdebug" default="1" type="list" label="PLG_WHOOPS_JDEBUG_ENABLE" description="PLG_WHOOPS_JDEBUG_ENABLE_DESC" >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field multiple="multiple" name="enable_user_groups" default="" type="usergrouplist" label="PLG_WHOOPS_USERGROUPS_ENABLE" description="PLG_WHOOPS_USERGROUPS_ENABLE_DESC" />
+                <field  name="enable_url_key" default="" type="text" label="PLG_WHOOPS_KEY" description="PLG_WHOOPS_KEY_DESC" />
+                <field name="remove_passwords" default="1" type="list" label="PLG_WHOOPS_PWD" description="PLG_WHOOPS_PWD_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
