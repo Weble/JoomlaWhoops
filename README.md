@@ -8,7 +8,7 @@ error occurs.
 
 ## Installation
 
-Download the package from the releases section here on github and install it through the joomla installer.
+Download the package from the [releases section](https://github.com/Weble/JoomlaWhoops/releases) here on github and install it through the joomla installer.
 
 ## Configuration
 
